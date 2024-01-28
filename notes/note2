@@ -1,0 +1,12 @@
+//  ctrl + space dablyavar tyat ajun kontya functionalities define karta yetil tya saglya yetat bhaiiii 
+ 
+ 
+                       //app.js cha sadha code lihla 
+                      // index.js madye trhen and catch laun error handle kela nad server la db listen karvala 
+
+// npm i cookie-parser cors
+                         
+                      // for all middelware communic. .use() is used
+
+                    //   .use(cors()) madye tyache factor lihle nanter jar ekhadi img vaigre ghayaychiye tar tyasathi json ghetle eka speciafied size che nanter jar url madun data ghayyachay mhanun tyach lihle and apan te ssagle je yetay te primary swaprupat kuthjetari store karuch na mhanun static madye lihun tyala public madye store karu primerly 
+

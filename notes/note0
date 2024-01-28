@@ -1,0 +1,8 @@
+npm i -D nodemon
+npm i -D prettier
+npm init
+git valya goshti
+src la dev la node cha rasta index file 
+type :module vaigre 
+gitignpore gitkeep vaigre
+

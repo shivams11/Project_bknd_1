@@ -1,0 +1,28 @@
+//connection to database
+
+
+npm init 
+                        readme md  and git join kele and git ignore and git keep kelya
+                        git che sagle operation and push karne vaigre
+npm i prettier 
+                              prettier chay 2 file banvlya
+                           .env file banvli
+                          src banvun tyat saglya files and folders takle
+npm i nodemon 
+                        pacakage madye src madye dev la nodemon index.js kr mhanje te load hoiel index change jhal ki
+                        type : modules
+
+npm i mongoose express dotenv
+
+                        .env la port tak and mongo chi url de
+
+// dot env madye jaun ek variable madye apli mongodb atlas vali connection madhli compass madhli url tak and tyat password tu thevlay to tak and last che slash kadh
+
+// index.js madye jaun kahi mic=x asyn and try catch express way madye database copnnnect cha code lihla and comment kel
+//after that db madye index file banavun tyat code lihla mport vaigre karun aand tyala export kela ..
+DB_NAME naavache vairable already constatnt madye ahe tyala saglikade import kartoy
+// every file chya last la .js extension la import kartana 
+
+// tyala aplay home chya index.js madye import karvun ghe 
+
+// dotenv direcet config karta yet but apan import kel and nanter tyala config karun path dila amnd package madye jaun src madye jaun tyat kahi goshti add kelya dev madye nodemon nanter 

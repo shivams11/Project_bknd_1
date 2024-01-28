@@ -1,12 +1,12 @@
 class Apierrors extends Error{
     constructor(
-        Statuscode,
+        statuscode,
         message="Something went wrong !!",
         errors=[],
         statck
     ){
         super(message);
-        this.Statuscode= Statuscode
+        this.statuscode= statuscode
         this.message=message
         this.data = null
         this.success =false

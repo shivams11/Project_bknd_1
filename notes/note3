@@ -1,0 +1,32 @@
+                                 started with models
+                                 tyane models link dilya git la tase pahun kahi schem banvtoy apan 
+                                 user ani videos cha schema banavla apan basic and nanter watch history vaigre la code lihnysathi mongoose chi agrregation package install kartoy 
+
+npm install mongoose-aggregate-paginate-v2
+
+                                 jaun mongodb aggregate pipeline varchi info pahun ye google or mogo sitre la 
+                                 and mogoose chya site la juan midelwarres pahun ne jkara bakiche
+
+                //mongoose schema ne konta variable banvklay tar tyala dot laun konti jari property rahuli tar ti ongoose cha middle ware rahte 
+                for eeg userSchema.plugin();
+
+npm install bcrypt 
+
+               // aplyla apasswoprd secure tyev ayche hote na tyala ecrypt karun thevayche hote nanter hash madye storwe vauigre and garaj oadlkyvar decrypt akrne vaurge tyasathiu vaoprta he
+               // json webtoke ....
+               ya doghi cryptography base liabrary ahe jya tockens banvatat
+               //JWT .io var jaun tocken pahu shakto apan
+               // tyat cryptography algorithm vaprun kahitari code generate karta jyat 3 main method ahe 
+               header , payload , verify signature
+
+npm i jsonwebtoken
+
+
+              // pan hya doghana lavayala aplyla mongoose cha middleware use karave lagel mhnun apan use karu .pre hook means he vaprta ki konta data process honyadhi kiva load honyadhi ha hook run houn jaiel and check karun gheiel tyamadhla function
+              // structure of pre
+              .pre(event, callback), he tula mongose doc madye pre hook madye jaun tyache event distil means kaleltula ki kontya operation chya adhi hook run hoiel and tyala arrow fun nako lau aplyala this vapraychey
+
+              //(userSchema).methods.(anymethod)  ase vapruin apan fakt . method vapruin kontipan navin property add karu shaktat tyat jase apan object madye prototype madye methods add karaycho tasa
+              //mag apan ek async fun banvle tyat password ghetoy7 user kadun je takel to input te and apan aplya function b=madye jaun bcrpt chi.compare method vaprtoy jyat to check karel ki user ne dilelela passwpprd and aplaa this.password jo tyachyat ahe te doghi same ahe or nahi and true or false value return karel and thoda time lagu hskato mahnun await madye taklay
+
+              // jwt is bearer tocken ... meanas keys saarkhe ahe te ... jo te token deiel tyala to data te deun takte

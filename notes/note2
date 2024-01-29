@@ -10,3 +10,14 @@
 
                     //   .use(cors()) madye tyache factor lihle nanter jar ekhadi img vaigre ghayaychiye tar tyasathi json ghetle eka speciafied size che nanter jar url madun data ghayyachay mhanun tyach lihle and apan te ssagle je yetay te primary swaprupat kuthjetari store karuch na mhanun static madye lihun tyala public madye store karu primerly 
 
+utils banvlya tu 
+// asynhandler banvle 
+means yamadye tu tujhe database connection vala jo connect db banavlay to takun run karavshil jar to run jhala tar samor actions perform hotil... means tu ek swrapper banvley fakt tya connectdb function la tyat to functiion lihlay and pass karavtoy tu tujha function 
+
+// api errors banvvlke
+yat basically tu error inbuiild class la extend karave and jeva pan tu apierror call karshil teva tya instance madye kahi parameters gheshil te tak tiuthe and super madye tu error chya constructor lka call kartoy baki mag sagle fakt tu tujhya alelya paramtyer chya value tujhya class chya instance madye load karvtoy and status thevtoy 
+status 500 means server error and 400 means client error and kai means run jhalay and data nahi dyaychya mhnun null and success pan 0 and stack provide kela asel tar tyala load karvtoy 
+
+
+// api response banvle
+tyatr basically tu fakt ex class banvtoy jevhapan tu tyala call karsgil tya instance amdye kahi paramter deshil jase ki ststauascode means tya http server cha statuscode and message jar asek error cha kahi tar to or default and data and fakt apan tya instance madye var banvun te parameter pass karvtoy and suc ess ha mhanvtoy bassss

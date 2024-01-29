@@ -2,7 +2,6 @@ const asynchandeler = (requesthandeler)=>{
          (req,res,next)=>{
             Promise.resolve(requesthandeler(req,res,next)).catch((error)=>next(error))
          }
-
 }
 
 export default asynchandeler;

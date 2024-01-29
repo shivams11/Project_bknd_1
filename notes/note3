@@ -30,3 +30,6 @@ npm i jsonwebtoken
               //mag apan ek async fun banvle tyat password ghetoy7 user kadun je takel to input te and apan aplya function b=madye jaun bcrpt chi.compare method vaprtoy jyat to check karel ki user ne dilelela passwpprd and aplaa this.password jo tyachyat ahe te doghi same ahe or nahi and true or false value return karel and thoda time lagu hskato mahnun await madye taklay
 
               // jwt is bearer tocken ... meanas keys saarkhe ahe te ... jo te token deiel tyala to data te deun takte
+              // jsonwebtockens chya documentation madye jaun pahu shakto tu tyala use karyachya methodolgy
+              apan pahile apla ek tocken banavu key and ti .env madye thevu and tichyane aoan =ghadighaduiaccess karayche kam karu 
+              //jwt.io madun tokens tu create karu shaktos

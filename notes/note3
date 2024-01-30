@@ -33,3 +33,14 @@ npm i jsonwebtoken
               // jsonwebtockens chya documentation madye jaun pahu shakto tu tyala use karyachya methodolgy
               apan pahile apla ek tocken banavu key and ti .env madye thevu and tichyane aoan =ghadighaduiaccess karayche kam karu 
               //jwt.io madun tokens tu create karu shaktos
+
+// now bas tu kahi random acess token and tyachi expiry banvli and same thing refresh pan banvle env madye
+nanater tu just gela user file la and tyta same methods banvlyaa tya tokens la generate karnyasathichya beacuse token tu ranbdom ghetle pan te generate nahi zale
+// jwt.sign()
+method vaprun te generate hoatat mhanun tu ek fun banvle tyat te return kele and tya method la 3 values lagtat
+// payload (kontya values set karyachya ahet tya database chya value ghevujn apan takto yat )
+//accesstokenkey (apan env madye bhanvliye tich de )
+//expired in tyat pan env la takley te pathav ekde 
+
+// same process for the refresh token bas tyat jast data nahi aatakat apabn fakt id deto 
+and ti _id apan kadhi kuth define nahi keliye tu mongodb already define karte prtayek obj la 

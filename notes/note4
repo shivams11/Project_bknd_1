@@ -1,0 +1,33 @@
+//cloudnary             
+                        // platform ahe jyavar apan sagle files upload karnar ahe multrer vaprun 
+                        // direct site la jaun pahu shakto kase install karta vaigre sanershivam2011 wala mail ne
+                      
+// npm install cloudinary
+
+                            
+//direct cloudnary la upload nahi kaertey apan... pahile multer cha use karun apan file ghevun localstorage madye upload kartoy and nanter tithun ti file cloudnary vaprun cloudnary la upload karu 
+ // cloudnaru che import and config che kam apan aplya cloudnary chya utl madye karu but apan tyala nav and key secret ahe te env folder la karu store ... and call karvu mhanje konala disu naye te 
+ //site varne copy kar systax
+
+ // fs filesystem liabrary ahe js chi inbuild ti aplyla khup sarya functionality provide karte file chya tyacha vapar karun aoan file localstroage la save kartoy and tyala delete pan karta yete unlink property vaprun ......ekda chi apli file upload jhali varti cloudnary la tar apan direct localstor maduun tila delete karu 
+// file sobat kahi chedchad karayche asel jase ki open read write delete tar tevha he vaprta fs
+
+// ek varirable bnavla tyat bollo path nasel tar retun kar  and asel tar mag tya localfile chya pat varun amchi file uchal and ti ghevun ja cloudnaru=y la and tyacha type vaigre dila and response ahe to purn apan retun karvla ki kuthe apli file saev ahe te vaigre 
+//catch madye apan bollo ki jara file upload hotch nahiye mag aplya localstorage madun pan tila delete kar mhnun apan simply takle file unlink and return nul  
+// basically apannuser kadun file ghevun multer vaprun localstorage taku and nanter cloudnary cha ha atta lihlela function vaprun te cloudnary la upload karu 
+// atta user kadun ghevun loaclfilepath la upload karayche kam multer karel and te middleware ahe mhnun middelwares madyech lihu tytala 
+
+
+
+
+// npm i multer 
+
+//tyachya documentation la jaunch kalel pudche sagle so jaun documenation vach ... yala or la express file uploader pckg pan aste
+// middelware ahe te aplya file acess karnychya and tyachyavarcha te req res err vale fun  run honyachya adhi he middelware run hote apan yala seperqte lihtoy nanter inject karu
+// yala use karto karan bagh yachya fun madye aplylaa file cha pan acess milto so apan tyachyashi chedchad  karu shakto and te cb mhanje basicaly callback ahe
+// storage navachya var madyee save kelay apan sagle te
+
+// atta fakt konte pan page route kaeeru na apan jase ki login or user or history vaiggre tyat fakt he middeleware upload karaychey te run hote
+
+
+

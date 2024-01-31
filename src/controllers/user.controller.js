@@ -9,15 +9,15 @@ const registerUser = asynchandeler(async (req, res) => {
     // res.status(500).json({
     //     message:"ok"
     // })
-    const { fullname, username, email, password } = req.body
+    const { fullName, username, email, password } = req.body
 
     if (
-        [fullname, username, email, password].some((field) => field?.trim() === "")
+        [fullName, username, email, password].some((field) => field?.trim() === "")
     ) {
         throw new Apierror(409, " All fields are required")
     }
 
-    const existedUser = User.findOne({
+    const existedUser = await User.findOne({
         $or: [{ username }, { email }]
     })
 
@@ -36,21 +36,22 @@ const registerUser = asynchandeler(async (req, res) => {
     if (!avatar) { throw new Apierror(400, "Avatar is required !!") }
 
     const user = await User.create({
-        fullname,
+        fullName,
         avatar: avatar.url,
+        email,
         coverImage: coverImage?.path || "",
-        username: username.toLowerCase(),
+        username: (username || "").toLowerCase(),
         password,
+    });
 
-    })
 
-    const createdUser = User.findById(user._id).select(
+    const createdUser = await User.findById(user._id).select(
         "-password -refreshTocken"
     )
     if (!createdUser) { throw new Apierror(500, "Something Went wrong when registering User") }
 
     return res.status(201).json(
-        new ApiResponse(200, createdUser, "User Registered Successfully !!")
+        new ApiResponse(200, createdUser, "User registered Successfully")
     )
 
 })

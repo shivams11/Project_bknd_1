@@ -28,7 +28,7 @@ const userSchema = new Schema(
             required: true,
             type: String   // cloudnary chi link jichyat store karvu
         },
-        coverimage: {
+        coverImage: {
             type: String
         },
         watchHistory: [
@@ -52,10 +52,10 @@ const userSchema = new Schema(
     }
 )
 
-userSchema.pre("save", function (next) {
+userSchema.pre("save", async function (next) {
     if (!this.isModified("password")) return next();
 
-    this.password = bcrypt.hash(this.password, 10)
+    this.password = await bcrypt.hash(this.password, 10)
     next();
 })
 
@@ -63,13 +63,13 @@ userSchema.methods.isPasswordCorrect = async function (password) {
     return await bcrypt.compare(password, this.password);
 }
 
-userSchema.methods.generateAccessToken =  async function(){
-    return  await jwt.sign(
+userSchema.methods.generateAccessToken = async function () {
+    return await jwt.sign(
         {
-           _id : this._id,
-           emial:this.email,
-           username:this.username,
-           fullName:this.fullName
+            _id: this._id,
+            emial: this.email,
+            username: this.username,
+            fullName: this.fullName
         },  // paylaod ahe he
         process.env.ACCESS_TOKEN_SECRET,
         {
@@ -78,11 +78,11 @@ userSchema.methods.generateAccessToken =  async function(){
     )
 }
 
-userSchema.methods.generateRefreshToken =  async function(){
-    return  await jwt.sign(
+userSchema.methods.generateRefreshToken = async function () {
+    return await jwt.sign(
         {
-           _id : this._id
-           
+            _id: this._id
+
         },  // paylaod ahe he
         process.env.REFRESH_TOKEN_SECRET,
         {

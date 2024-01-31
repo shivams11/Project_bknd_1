@@ -1,0 +1,26 @@
+// export dafualt route ase kele tarach apan te import kuthe kartana veglya navane import karvu hskato jase ki userrouter vaigre vaigre so  te dyanat thev jar tu export {router }kel tar tu as a router ch import karavu shakto
+// jar export {route } ase kele tarch tu import dusrikade kartana {router } karu shakshil
+// note 1: jar tu {xyz} ase export keley tarch tu kontya file la import {xyz} karu shaktos otherwise jar tu export default use kartoy tar tu kontyapan name ne import use karu shktos fakt te {} yamadye nako lihu
+
+
+// user controller
+
+// aplyla ek user controller banavyche hite mhanje apa router kele ki users madye jaun register or login karaychey as tas tyasathi
+// apan jyaoan functionality lihu tyasathi apan ek wrppaer banvley asynhandeler je ek fun ahe tyat te run karvun pahil and tasa response or error dete so apan te sagya function madye use kryu mhnun ti utility ahe atta tyala import kar pahile
+//mag fakt starting l amhnaun ek fun banavala ki user ne register kelyvar kay run vhyayala pahije so register user banvala and je aplyla yeatay te tya asynhandeler madye pass kel mhanje pudche kam to baghel error or res che...
+
+// user router and app.js madhla router
+
+// firstly user router banvle apan router import akarun and tyat bsas router var bavun Router chi val takli and export kele atta app.js madye jaun
+// import UserRouter ase ek asach fun var call kela aplya roer file madun and tyat fakte and tyat .use middleware vaprun lihle ki /users la gela ki sagle controll userRoter means aplya router chya user.router.js kade jaiel pudche register or login vaigre te pahil tyachya app shi sambhand nahi
+//app.get()vaprun pahile apan router karaycho pan apan ethe router and controller vaprtoy mhnun aplyala middelware vaparave lagel te .use method ne yete .... /api/v1 measn kahi nahi stanadard practise mahnun api madhle version 1 madhla user asa lihta bas
+//**  next mag user.roouter.js madye jaun apan just aplya router variable la sangitle jar tu /register a router jhala ki mag registerUser function ahe te call hoiel and run hoiel... means jar users/register kele tar he run hoiel ase
+// same prakare apan /login etc etc banvu shakto bas aplyala tyache controller fun lihave lagtil mhanje te route jhale ki te run hote
+
+
+// postman
+
+// atta simply postman la jaun
+// http://localhost:4000/api/v1/users/register he takun post methos send karshil tar aplya response maadhla ok messsage disel tula lagech
+
+// http chay video madye baki disel tula ki kase 400 client error 500 server error 200 sucess 300 redirection cause file removed or shifted and 100 precedding asete

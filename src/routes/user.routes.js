@@ -31,10 +31,10 @@ router.route("/current-user").get(verifyJWT, getCurrentUser)
 router.route("/update-account").patch(verifyJWT, updateAccountDetaile)
 //patch thevaave lagel updaetkartoy so post kel tar sagli detail update hoiel
 
-router.route("/avatar").patch(verifyJWT, upload.single("/avatar"), updateUserAvatar)
+router.route("avatar").patch(verifyJWT, upload.single("/avatar"), updateUserAvatar)
 //updat kartoy so patch vaprle and pahile verify kle nanter upload je multer che mid ahe te vaprle karan pahile ek file pan ghyavi lagelk na and ekach file ghyayachiye mhanun . single madye tya file che nav takle and mag update vale function run kel
 
-router.route("/cover-Image").patch(verifyJWT, upload.single("/coverImage"), updateUsercoverImage)
+router.route("coverImage").patch(verifyJWT, upload.single("/coverImage"), updateUsercoverImage)
 
 router.route("/c/:username").get(verifyJWT, getUserAccountDetailes)
 // paramps ne value ghetliye mhanun ethe problem hoto ....jara route adress vegla takavba lagel ... yat /c/ he tu kahihi lihu hskato but tyananter : vaprun je lihli  na tyachi value te ghete 
